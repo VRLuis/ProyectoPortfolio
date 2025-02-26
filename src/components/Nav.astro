@@ -1,14 +1,14 @@
 <header>
-    <h1>¡Hello, I'm Luis!</h1>
-    <h2>Front End Developer</h2>
+    <h1>¡Hola, soy Luis!</h1>
+    <h2>FullStack Developer</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel excepturi autem sequi perferendis ea consequuntur! Delectus voluptates eius mollitia deleniti excepturi totam ad. Natus repellendus error unde rem. Facere, autem.</p>
     <br>
-    <a href="#contact"><button>Contact</button></a>
+    <a href="#contact"><button>¡Contáctame!</button></a>
 </header>
-<nav>
-    <a href="#projects">Projects</a>
-    <a href="#experience">Experience</a>
-    <a href="#contact">Contact</a>
+<nav class="nav">
+    <a href="#projects">Proyectos</a>
+    <a href="#knowledge">Conocimientos</a>
+    <a href="#contact">Contacto</a>
 </nav>
 
 <style>
@@ -48,12 +48,13 @@
             margin: 20px 500px; 
         }
     }
-    nav{
+    .nav{
         margin: 150px 500px 0px 500px;
+        background-color: transparent;
         display: flex;
         justify-content: space-around;
         padding: 50px;
-        position: sticky;
+        top: 0;
         a{
             text-decoration: none;
             color: whitesmoke;

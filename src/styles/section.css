@@ -1,0 +1,29 @@
+section{
+    scale: 1;
+    transition: 0.2s;
+    color: whitesmoke;
+    margin: 200px 400px;
+    padding: 40px 100px;
+    width: fit-content;
+    
+    border-radius: 20px;
+    .section-title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h1{
+            font-size: 40px;
+        }
+    }
+    h1, h2, svg{
+        transition: 0.2s;
+    }
+    &:hover{
+        scale: 1.05;
+        transition: 0.5s;
+        h1, #title-icon{
+            transition: 0.2s;
+            filter: drop-shadow(10px 10px 4px #4e4eff);
+        }
+    }
+}
