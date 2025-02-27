@@ -1,0 +1,57 @@
+---
+import '../styles/section.css';
+import Image from "astro/components/Image.astro";
+import Foto from "../images/fotocurriculum.jpg";
+---
+
+<section id="about">
+    <div class="section-title">
+        <h1>Sobre mí</h1>
+        <svg id="title-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="40" height="40" stroke-width="2"><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path><path d="M21 21l-6 -6"></path><path d="M10 13l0 .01"></path><path d="M10 10a1.5 1.5 0 1 0 -1.14 -2.474"></path></svg>    
+    </div>
+    <div class="about-information">
+        <Image src={Foto} alt="Foto de Luis Villar Roldán" style="width: 300px; height: 300px; border-radius: 500px;"/>
+        <div class="about-paragraph">
+            <h2>Luis Villar Roldán</h2>
+            <p>
+                <span id="paragraph-title">--Apasionado del desarrollo web--</span>
+                <br>
+                <br>
+                Tengo <span class="highlight">experiencia real</span> en la creación de <span class="highlight">aplicaciones de escritorio</span> 
+                y en crear <span class="highlight">scripts básicos</span> para pequeñas tareas.
+                Mi objetivo es ofrecer al público webs <span class="highlight">llamativas y sorprendentes</span>.
+                Tengo poca experiencia en este mundo, pero siempre estoy <span class="highlight">motivado</span> por obtener más y más conocimientos.
+                Me encanta aprender por mi cuenta pero también <span class="highlight">aprender de los demás</span>, juntos siempre es mejor.
+            </p>
+        </div>
+    </div>
+</section>
+
+<style>
+    .section-title{
+        width: 920px;
+    }
+
+    .about-information{
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        p{
+            width: 500px;
+            font-size: 20px;
+        }
+        #paragraph-title{
+            font-style: oblique;
+            color: rgba(245, 245, 245, 0.51);
+        }
+        h2{
+            color: goldenrod;
+            font-style: italic;
+        }
+        .highlight{
+            font-weight: bolder;
+            color:burlywood;
+        }
+    }
+</style>

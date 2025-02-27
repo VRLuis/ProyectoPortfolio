@@ -1,27 +1,49 @@
+---
+import Image from "astro/components/Image.astro";
+import Foto from "../images/fotocurriculum.jpg";
+---
+
 <header>
     <h1>¡Hola, soy Luis!</h1>
+    <Image src={Foto} alt="Foto de Luis Villar Roldán" style="width: 300px; height: 300px; border-radius: 500px;"/>
     <h2>FullStack Developer</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel excepturi autem sequi perferendis ea consequuntur! Delectus voluptates eius mollitia deleniti excepturi totam ad. Natus repellendus error unde rem. Facere, autem.</p>
-    <br>
-    <a href="#contact"><button>¡Contáctame!</button></a>
 </header>
+<div class="contact-information">
+    <a href="https://www.linkedin.com/in/luis-villar-rold%C3%A1n-28826227a/" target="_blank">
+        <div class="contact-target">
+            <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="40" height="40" stroke-width="2"> <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path> <path d="M8 11l0 5"></path> <path d="M8 8l0 .01"></path> <path d="M12 16l0 -5"></path> <path d="M16 16v-3a2 2 0 0 0 -4 0"></path> </svg> 
+            Luis Villar Roldán
+        </div>
+    </a>
+    <a href="https://github.com/VRLuis" target="_blank">
+        <div class="contact-target">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="40" height="40" stroke-width="2"><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path></svg>        
+            VRLuis
+        </div>
+    </a>
+    <div class="contact-target">
+        <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="40" height="40" stroke-width="2"> <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path> <path d="M8 11l0 5"></path> <path d="M8 8l0 .01"></path> <path d="M12 16l0 -5"></path> <path d="M16 16v-3a2 2 0 0 0 -4 0"></path> </svg> 
+        <a href="https://www.linkedin.com/in/luis-villar-rold%C3%A1n-28826227a/">luisvillarroldan1010@gmail.com</a>
+    </div>
+    
+</div>
 <nav class="nav">
+    <a href="#about">Sobre mí</a>
     <a href="#projects">Proyectos</a>
     <a href="#knowledge">Conocimientos</a>
-    <a href="#contact">Contacto</a>
+    <a href="#certificates">Certificados</a>
 </nav>
 
 <style>
     header{
         width: 100%;
-        padding: 50px 0px;
+        padding: 20px 0px;
         font-size: 50px;
         justify-content: center;
         text-align: center;
         background: linear-gradient(#0a0e1a, #162447, #1f4068);
         a{
             text-decoration: none;
-            
             button{
                 border: 1px solid whitesmoke;
                 color: whitesmoke;
@@ -49,7 +71,8 @@
         }
     }
     .nav{
-        margin: 150px 500px 0px 500px;
+        margin: 0px 500px 0px 500px;
+        width: fit-content;
         background-color: transparent;
         display: flex;
         justify-content: space-around;
@@ -67,5 +90,35 @@
                 transition: 0.2s;
             }
         }
+    }
+
+    .contact-information{
+        margin: 0px 400px 0px 400px;
+        padding: 80px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    a{
+        text-decoration: none;
+        color: whitesmoke;
+    }
+
+    .contact-target{
+        width: fit-content;
+        margin-bottom: 20px;
+        padding: 10px 50px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        box-shadow: 0 0 10px #5eb0f740;
+        background-color: #3e6adb8f;
+        border-radius: 15px;
+        transition: 200ms;
+        &:hover{
+            transition: 200ms;
+            scale: 1.1;
+        }
+        
     }
 </style>

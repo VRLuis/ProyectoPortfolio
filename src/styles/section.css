@@ -19,7 +19,7 @@ section{
         transition: 0.2s;
     }
     &:hover{
-        scale: 1.05;
+        scale: 1.01;
         transition: 0.5s;
         h1, #title-icon{
             transition: 0.2s;
