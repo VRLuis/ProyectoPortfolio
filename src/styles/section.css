@@ -1,13 +1,10 @@
-section{
-    width: 100%;
-    padding: 100%;    
+section{ 
     scale: 1;
     transition: 0.2s;
     color: whitesmoke;
-    margin: 200px 400px;
+    margin: 300px auto;
     padding: 40px 100px;
     width: fit-content;
-    
     border-radius: 20px;
     .section-title{
         display: flex;

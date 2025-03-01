@@ -78,7 +78,7 @@ import Foto from "../images/fotocurriculum.jpg";
 
 <style>
     header{
-        padding: 20px 100%;
+        padding: 20px 0;
         font-size: 50px;
         justify-content: center;
         text-align: center;
@@ -110,30 +110,14 @@ import Foto from "../images/fotocurriculum.jpg";
             margin: 20px 50px; 
         }
     }
-    #mail{
-        opacity: 1;
-        transition: opacity 0.5s ease-in-out;
-        transition: 100ms;
-        cursor: pointer;   
-        margin-left: 50px;
-        &:hover{
-            scale: 1.5;
-            transition: 100ms;
-        }
-    }
-    #tick{
-        opacity: 0;
-        transition: opacity 0.5s ease-in-out;
-        transition: 100ms;
-    }
     .nav{
         transition: 300ms;
         z-index: 1;
         width: 920px;
+        margin: 0 auto;
         background-color: transparent;
         display: flex;
         justify-content: space-around;
-        padding: 0 100%;
         top: 0;
         position: sticky;
         a{
@@ -155,6 +139,8 @@ import Foto from "../images/fotocurriculum.jpg";
 
     .contact-information{
         padding: 80px;
+        width: 1000px;
+        margin: 50px auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
