@@ -5,7 +5,7 @@ import Foto from "../images/fotocurriculum.jpg";
 
 <header id="about">
     <div class="about-information">
-        <Image src={Foto} alt="Foto de Luis Villar Roldán" style="width: 300px; height: 300px; border-radius: 500px;"/>
+        <Image id="photo" src={Foto} alt="Foto de Luis Villar Roldán" style="width: 300px; height: 300px; border-radius: 500px;"/>
         <div class="about-paragraph">
             <h2>Luis Villar Roldán</h2>
             <p>
@@ -222,6 +222,36 @@ import Foto from "../images/fotocurriculum.jpg";
                 color: rgb(46, 227, 233);
             }
             background-color: #11113da5;
+        }
+    }
+
+    @media (max-width: 1500px) {
+        #about{
+            text-align: center;
+            width: fit-content;
+            display: flex;
+            flex-wrap: wrap;
+            .about-information{
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 0;
+                #photo{
+                    transform: scale(1.5);
+                    margin-top: 100px;
+                }
+            }
+            .about-paragraph{
+                margin: 50px 0 0 0;
+                p{
+                    #paragraph-title{
+                        font-size: 25px;
+                    }
+                    width: 400px;
+                    font-size: 30px;
+                    text-align: justify;
+                }
+            }
         }
     }
 </style>

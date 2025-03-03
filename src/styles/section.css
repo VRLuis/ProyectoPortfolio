@@ -1,9 +1,9 @@
 section{ 
     scale: 1;
-    transition: 0.2s;
+    transition: 200ms;
     color: whitesmoke;
     margin: 300px auto;
-    padding: 40px 100px;
+    padding: 100px 100px;
     width: fit-content;
     border-radius: 20px;
     .section-title{
@@ -15,13 +15,13 @@ section{
         }
     }
     h1, h2, svg{
-        transition: 0.2s;
+        transition: 200ms;
     }
     &:hover{
         scale: 1.01;
-        transition: 0.5s;
+        transition: 500ms;
         h1, #title-icon{
-            transition: 0.2s;
+            transition: 200ms;
             filter: drop-shadow(10px 10px 4px #4e4eff);
         }
     }
