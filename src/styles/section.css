@@ -28,5 +28,39 @@ section{
 }
 
 @media (max-width: 1500px) {
-    
+    section{
+        .section-title{
+            h1{
+                font-size: 60px;
+            }
+            svg{
+                width: 70px;
+                height: 70px;
+            }
+        }
+        .projects-information{
+            h2{
+                font-size: 40px
+            }
+            p{
+                width: 100%;
+                font-size: 30px;
+            }
+            display:flex;
+            flex-direction: column;
+            div{
+                margin-bottom: 50px;
+            }
+            .tags{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;;
+            }
+            img{
+                margin-top: 50px;
+                scale: 1.5;
+            }
+            padding-bottom: 100px;
+        }
+    }
 }

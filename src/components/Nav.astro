@@ -227,58 +227,65 @@ import Foto from "../images/fotocurriculum.jpg";
 
     @media (max-width: 1500px) {
         #about{
+            width: 300px;
             text-align: center;
-            width: fit-content;
             display: flex;
             flex-wrap: wrap;
+            justify-content: center;
+            #photo{
+                scale: 0.8;
+                margin-bottom: 0;
+            }
+            h1{
+                margin-top: 0;
+            }
             h2{
-                font-size: 60px;
+                font-size: 35px;
             }
             .about-information{
-                width: 100%;
+                width: 350px;
                 flex-direction: column;
                 align-items: center;
                 margin-top: 0;
-                #photo{
-                    transform: scale(1.5);
-                    margin-top: 100px;
-                }
             }
             .about-paragraph{
-                margin: 50px 0 0 0;
-                width: 100%;
                 p{
-                    width: 500px;
-                    font-size: 30px;
+                    width: 200px;
+                    font-size: 11px;
                     text-align: center;
+                    margin: 0 auto;
                     #paragraph-title{
-                        font-size: 25px;
+                        font-size: 15px;
                     }
                 }
             }
         }
         .contact-information{
-            padding: 20px;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
             .contact-target{
-                font-size: 40px;
-                margin: 10px;
+                font-size: 10px;
+                width: fit-content;
+                height: fit-content;
+                justify-content: space-around;
                 svg{
-                    width: 50px;
-                    height: 50px;
+                    width: 20px;
+                    height: 20px;
                     margin-right: 10px;
                 }
             }
         }
         .nav{
+            width: 300px;
+            margin: 0;
             margin-top: 100px;
+            display: flex;
+            flex-wrap: wrap;
             a{
                 text-align: center;
                 font-size: 30px;
-                padding: 20px 20px;
             }
         }
 
