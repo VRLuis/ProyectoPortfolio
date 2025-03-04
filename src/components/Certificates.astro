@@ -80,20 +80,43 @@ import Cambridge from '../images/B2English.jpg';
         }
     }
 
-    @media (max-width: 1500px) {
+    @media (max-width: 1000px) {
+        section{
+            padding: 50px 0;
+        }
+        .section-title{
+            width: 100%;
+        }
         .certificates-information{
             width: 100%;
+            padding: 0;
             justify-content: center;
         }
+        .section-title {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
         .certificate{
+            margin: 10px 0;
+            padding: 0;
             width: 100%;
             h3{
-                font-size: 40px;
+                font-size: 15px;
+            }
+            a{
+                display: inline-block;
+                max-width: 100%;
             }
             img{
-                margin-top: 50px;
-                scale: 1.1;
+                width: 100%;
+                height: auto;
+                max-width: 300px;
+                max-height: 500px;
+                border-radius: 15px; 
             }
         }
+        
     }
 </style>

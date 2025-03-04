@@ -14,3 +14,17 @@ import Certificates from '../components/Certificates.astro';
 		<Certificates></Certificates>
 	</article>
 </Layout>
+
+<style>
+	article{
+		width: 100%;
+	}
+	@media (max-width: 1000px) {
+		article{
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+	}
+</style>

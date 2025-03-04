@@ -2,7 +2,12 @@
 import Image from "astro/components/Image.astro";
 import Foto from "../images/fotocurriculum.jpg";
 ---
-
+<nav id="navbar" class="nav">
+    <a href="#about">Sobre mí</a>
+    <a href="#projects">Proyectos</a>
+    <a href="#knowledge">Conocimientos</a>
+    <a href="#certificates">Certificados</a>
+</nav>
 <header id="about">
     <div class="about-information">
         <Image id="photo" src={Foto} alt="Foto de Luis Villar Roldán" style="width: 300px; height: 300px; border-radius: 500px;"/>
@@ -36,26 +41,22 @@ import Foto from "../images/fotocurriculum.jpg";
             VRLuis
         </div>
     </a>
-    <div class="contact-target">
-        <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="40" height="40" stroke-width="2"><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"></path><path d="M3 7l9 6l9 -6"></path></svg>        
-        luisvillarroldan1010@gmail.com
-        <svg id="mail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2"><path d="M7 7m0 2.667a2.667 2.667 0 0 1 2.667 -2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1 -2.667 2.667h-8.666a2.667 2.667 0 0 1 -2.667 -2.667z"></path><path d="M4.012 16.737a2.005 2.005 0 0 1 -1.012 -1.737v-10c0 -1.1 .9 -2 2 -2h10c.75 0 1.158 .385 1.5 1"></path></svg>
-    </div>
-    
+    <a href="">
+        <div class="contact-target">
+            <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="40" height="40" stroke-width="2"><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"></path><path d="M3 7l9 6l9 -6"></path></svg>        
+            luisvillarroldan1010@gmail.com
+            <svg id="mail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2"><path d="M7 7m0 2.667a2.667 2.667 0 0 1 2.667 -2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1 -2.667 2.667h-8.666a2.667 2.667 0 0 1 -2.667 -2.667z"></path><path d="M4.012 16.737a2.005 2.005 0 0 1 -1.012 -1.737v-10c0 -1.1 .9 -2 2 -2h10c.75 0 1.158 .385 1.5 1"></path></svg>
+        </div>
+    </a>
 </div>
-<nav id="navbar" class="nav">
-    <a href="#about">Sobre mí</a>
-    <a href="#projects">Proyectos</a>
-    <a href="#knowledge">Conocimientos</a>
-    <a href="#certificates">Certificados</a>
-</nav>
+
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         const navbar = document.getElementById("navbar");
         
         window.addEventListener("scroll", function () {
-            if (window.scrollY > 1000) {
+            if (window.scrollY > 150) {
                 navbar?.classList.add("scrolled");
             } else {
                 navbar?.classList.remove("scrolled");
@@ -113,16 +114,19 @@ import Foto from "../images/fotocurriculum.jpg";
     .nav{
         transition: 300ms;
         z-index: 1;
-        width: 920px;
-        margin: 0 auto;
+        width: 100%;
+        padding: 20px auto;
         background-color: transparent;
         display: flex;
         justify-content: space-around;
         top: 0;
         position: sticky;
+        text-align: center;
         a{
+            border-radius: 20px;
+            background-color: #8b8bff14;
             text-decoration: none;
-            padding: 20px;
+            padding: 20px 80px;
             color: whitesmoke;
             font-size: 20px;
             scale: 1;
@@ -130,8 +134,9 @@ import Foto from "../images/fotocurriculum.jpg";
             min-width: 100px;
             width: fit-content;
             margin: 30px;
+            box-shadow: 0 0 25px #162447;
             &:hover{
-                scale: 1.5;
+                scale: 1.2  ;
                 transition: 200ms;
             }
         }
@@ -207,27 +212,27 @@ import Foto from "../images/fotocurriculum.jpg";
 
     .scrolled{
         transition: 300ms;
+        left: 0;
         position: fixed;
         padding: 30px 50px;
         background-color: #11113d14;
         width: 100%;
         font-weight: bolder;
         a{
-            color: rgba(218, 165, 32, 0.194);
-            padding: 0px;
+            color: rgba(255, 255, 255, 0.194);
+            padding: 20px;
             margin: 0;
         }
         &:hover{
             a{
-                color: rgb(46, 227, 233);
+                color: rgb(244, 255, 255);
             }
             background-color: #11113da5;
         }
     }
 
-    @media (max-width: 1500px) {
+    @media (max-width: 1000px) {
         #about{
-            width: 300px;
             text-align: center;
             display: flex;
             flex-wrap: wrap;
@@ -249,6 +254,7 @@ import Foto from "../images/fotocurriculum.jpg";
                 margin-top: 0;
             }
             .about-paragraph{
+                width: 350px;
                 p{
                     width: 200px;
                     font-size: 11px;
@@ -261,11 +267,23 @@ import Foto from "../images/fotocurriculum.jpg";
             }
         }
         .contact-information{
+            width: 100%;
+            padding: 80px 0;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
+            a, div{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                padding: 10px 20px;
+                width: 100%;
+            }
             .contact-target{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
                 font-size: 10px;
                 width: fit-content;
                 height: fit-content;
@@ -278,16 +296,42 @@ import Foto from "../images/fotocurriculum.jpg";
             }
         }
         .nav{
-            width: 300px;
-            margin: 0;
-            margin-top: 100px;
+            width: 100%;
+            height: fit-content;
+            padding: 0;
             display: flex;
             flex-wrap: wrap;
+            left: 0;
             a{
+                font-size: 10px;
+                width: fit-content;
+                padding: 20px 20px;
+                margin: 10px;
                 text-align: center;
-                font-size: 30px;
             }
         }
-
+        .scrolled{
+            transition: 300ms;
+            margin-top: 10px;
+            left: 0;
+            top: 0;
+            margin-top: 0;
+            padding: 10px 0;
+            position: fixed;
+            background-color: #11113d14;
+            font-weight: bolder;
+            a{
+                margin: 0;
+                font-size: 10px;
+                padding: 10px 0;
+                color: rgba(255, 255, 255, 0.194);
+            }
+            &:hover{
+                a{
+                    color: rgb(244, 255, 255);
+                }
+                background-color: #11113da5;
+            }
+        }
     }
 </style>
