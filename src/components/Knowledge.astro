@@ -146,8 +146,26 @@ import '../styles/section.css';
     .icons{
         margin: 26px;
     }
+
+    @media (max-width: 1500px) {
+        .experience-information{
+            width: 100%;
+        }
+        .experience-split{
+            padding: 0 50px;
+            margin: 50px auto;
+            text-align: center;
+            svg{
+                width: 50px;
+                height: 50px;
+            }
+            h2{
+                font-size: 20px;
+            }
+        }
+    }
     
-    @media (max-width: 1500px){
+    @media (max-width: 1000px){
         section{
             padding: 50px 0;
         }
@@ -162,8 +180,8 @@ import '../styles/section.css';
             flex-wrap: wrap;
         }
         .experience-split{
-            width: 100%;
             padding: 0 50px;
+            margin: 50px auto;
             text-align: center;
             svg{
                 width: 50px;

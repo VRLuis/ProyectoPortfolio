@@ -214,7 +214,7 @@ import Foto from "../images/fotocurriculum.jpg";
         transition: 300ms;
         left: 0;
         position: fixed;
-        padding: 30px 50px;
+        padding: 30px 0;
         background-color: #11113d14;
         width: 100%;
         font-weight: bolder;
@@ -231,10 +231,36 @@ import Foto from "../images/fotocurriculum.jpg";
         }
     }
 
-    @media (max-width: 1500px) {
+    @media (max-width: 1500px){
+        .nav{
+            width: 100%;
+            height: fit-content;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            left: 0;
+            padding-top: 20px;
+            a{
+                font-size: 20px;
+                width: fit-content;
+                padding: 20px;
+                margin: 10px;
+                text-align: center;
+            }
+        }
+        .contact-information{
+            width: 100%;
+        }
+        header{
+            flex-direction: column;
+        }
+    }
+
+    @media (max-width: 1000px) {
         #about{
             text-align: center;
             display: flex;
+            flex-direction: column;
             flex-wrap: wrap;
             justify-content: center;
             #photo{
