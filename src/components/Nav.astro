@@ -2,11 +2,11 @@
 import Image from "astro/components/Image.astro";
 import Foto from "../images/fotocurriculum.jpg";
 ---
-<nav id="navbar" class="nav">
-    <a href="#about">Sobre mí</a>
-    <a href="#projects">Proyectos</a>
-    <a href="#knowledge">Conocimientos</a>
-    <a href="#certificates">Certificados</a>
+<nav id="navbar" class="nav transition-all w-full pt-5 pb-5 pr-auto pl-auto bg-transparent flex justify-around top-0 sticky">
+    <a class="rounded-3xl bg-blue-900 decoration-solid pt-5 pb-5 pr-20 pl-20 text-white text-xl scale-100 transition-all min-w100 w-fit shadow-2xl" href="#about">Sobre mí</a>
+    <a class="rounded-3xl bg-blue-900 decoration-solid pt-5 pb-5 pr-20 pl-20 text-white text-xl scale-100 transition-all min-w100 w-fit shadow-2xl" href="#projects">Proyectos</a>
+    <a class="rounded-3xl bg-blue-900 decoration-solid pt-5 pb-5 pr-20 pl-20 text-white text-xl scale-100 transition-all min-w100 w-fit shadow-2xl" href="#knowledge">Conocimientos</a>
+    <a class="rounded-3xl bg-blue-900 decoration-solid pt-5 pb-5 pr-20 pl-20 text-white text-xl scale-100 transition-all min-w100 w-fit shadow-2xl" href="#certificates">Certificados</a>
 </nav>
 <header id="about">
     <div class="about-information">
@@ -117,24 +117,9 @@ import Foto from "../images/fotocurriculum.jpg";
         }
     }
     .nav{
-        transition: 300ms;
-        z-index: 1;
-        width: 100%;
-        padding: 20px auto;
-        background-color: transparent;
-        display: flex;
-        justify-content: space-around;
-        top: 0;
-        position: sticky;
-        text-align: center;
+        
         a{
-            border-radius: 20px;
-            background-color: #8b8bff14;
-            text-decoration: none;
-            padding: 20px 80px;
-            color: whitesmoke;
-            font-size: 20px;
-            scale: 1;
+            
             transition: 200ms;
             min-width: 100px;
             width: fit-content;
