@@ -3,25 +3,25 @@ import Image from "astro/components/Image.astro";
 import Foto from "../images/fotocurriculum.jpg";
 ---
 <nav id="navbar" class="nav transition-all w-full pt-5 pb-5 pr-auto pl-auto bg-transparent flex justify-around top-0 sticky">
-    <a class="rounded-3xl bg-blue-900 decoration-solid pt-5 pb-5 pr-20 pl-20 text-white text-xl scale-100 transition-all min-w100 w-fit shadow-2xl" href="#about">Sobre mí</a>
-    <a class="rounded-3xl bg-blue-900 decoration-solid pt-5 pb-5 pr-20 pl-20 text-white text-xl scale-100 transition-all min-w100 w-fit shadow-2xl" href="#projects">Proyectos</a>
-    <a class="rounded-3xl bg-blue-900 decoration-solid pt-5 pb-5 pr-20 pl-20 text-white text-xl scale-100 transition-all min-w100 w-fit shadow-2xl" href="#knowledge">Conocimientos</a>
-    <a class="rounded-3xl bg-blue-900 decoration-solid pt-5 pb-5 pr-20 pl-20 text-white text-xl scale-100 transition-all min-w100 w-fit shadow-2xl" href="#certificates">Certificados</a>
+    <a class="shadow-blue-700 hover:scale-110 rounded-3xl bg-blue-900 decoration-solid pt-5 pb-5 pr-20 pl-20 text-white text-xl scale-100 transition-all min-w100 w-fit" href="#about">Sobre mí</a>
+    <a class="shadow-blue-700 hover:scale-110 rounded-3xl bg-blue-900 decoration-solid pt-5 pb-5 pr-20 pl-20 text-white text-xl scale-100 transition-all min-w100 w-fit" href="#projects">Proyectos</a>
+    <a class="shadow-blue-700 hover:scale-110 rounded-3xl bg-blue-900 decoration-solid pt-5 pb-5 pr-20 pl-20 text-white text-xl scale-100 transition-all min-w100 w-fit" href="#knowledge">Conocimientos</a>
+    <a class="shadow-blue-700 hover:scale-110 rounded-3xl bg-blue-900 decoration-solid pt-5 pb-5 pr-20 pl-20 text-white text-xl scale-100 transition-all min-w100 w-fit" href="#certificates">Certificados</a>
 </nav>
-<header id="about">
-    <div class="about-information">
+<header class="max-w-5xl mr-auto ml-auto" id="about">
+    <div class="w-full flex mt-28 justify-center items-center">
         <Image id="photo" src={Foto} alt="Foto de Luis Villar Roldán" style="width: 300px; height: 300px; border-radius: 500px;"/>
-        <div class="about-paragraph">
-            <h2>Luis Villar Roldán</h2>
-            <p>
-                <span id="paragraph-title">-- Amante del desarrollo web --</span>
+        <div>
+            <h2 class="text-amber-500 italic text-left w-auto text-5xl mt-5 mb-14 mr-14 ml-14">Luis Villar Roldán</h2>
+            <p class="text-2xl w-auto mt-5 mb-5 mr-14 ml-14">
+                <span class="oblique text-slate-400 text-xl">-- Amante del desarrollo web --</span>
                 <br>
                 <br>
-                <span class="highlight">Apasionado de la tecnología</span> desde pequeño, ahora lo convierto en mi profesión. Con una mente <span class="highlight">curiosa y resiliente</span>, 
-                siempre estoy listo para <span class="highlight">aprender</span>, proponer soluciones y llevar ideas a la acción.
-                Me encanta el <span class="highlight">desarrollo web</span> y la tecnología en general. Disfruto enfrentando <span class="highlight">nuevos desafios</span>,
-                creando <span class="highlight">soluciones funcionales</span> y <span class="highlight">aprendiendo constantemente</span>. 
-                Valoro el <span class="highlight">trabajo en equipo</span> y la oportunidad de crecer con cada proyecto.
+                <span class="text-orange-300 font-extrabold italic">Apasionado de la tecnología</span> desde pequeño, ahora lo convierto en mi profesión. Con una mente <span class="text-orange-300 font-extrabold italic">curiosa y resiliente</span>, 
+                siempre estoy listo para <span class="text-orange-300 font-extrabold italic">aprender</span>, proponer soluciones y llevar ideas a la acción.
+                Me encanta el <span class="text-orange-300 font-extrabold italic">desarrollo web</span> y la tecnología en general. Disfruto enfrentando <span class="text-orange-300 font-extrabold italic">nuevos desafios</span>,
+                creando <span class="text-orange-300 font-extrabold italic">soluciones funcionales</span> y <span class="text-orange-300 font-extrabold italic">aprendiendo constantemente</span>. 
+                Valoro el <span class="text-orange-300 font-extrabold italic">trabajo en equipo</span> y la oportunidad de crecer con cada proyecto.
 
                 Siempre estoy abierto a nuevas oportunidades y colaboraciones.
                 
@@ -29,30 +29,31 @@ import Foto from "../images/fotocurriculum.jpg";
         </div>
         
     </div>
-    <h2>FullStack Developer</h2>
+    <h2 class="text-sky-500 text-5xl mt-14 text-center mb-10">FullStack Developer</h2>
 </header>
-<div class="contact-information">
+<div class="pb-20 pt-20 pr-20 pl-20 w-full mt-12 mb-12 ml-auto mr-auto flex wrap justify-around">
     <div>
-        <a href="https://www.linkedin.com/in/luis-villar-rold%C3%A1n-28826227a/" target="_blank">
-            <div class="contact-target">
-                <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="40" height="40" stroke-width="2"> <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path> <path d="M8 11l0 5"></path> <path d="M8 8l0 .01"></path> <path d="M12 16l0 -5"></path> <path d="M16 16v-3a2 2 0 0 0 -4 0"></path> </svg> 
+        <a class="text-white" href="https://www.linkedin.com/in/luis-villar-rold%C3%A1n-28826227a/" target="_blank">
+            <div class="contact-target w-fit h-20 ml-10 mb-5 pt-3 pb-3 pr-10 pl-10 flex justify-between items-center bg-blue-900 rounded-2xl transition-all hover:scale-110">
+                <svg class="contact-icon pr-2 pl-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="40" height="40" stroke-width="2"> <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path> <path d="M8 11l0 5"></path> <path d="M8 8l0 .01"></path> <path d="M12 16l0 -5"></path> <path d="M16 16v-3a2 2 0 0 0 -4 0"></path> </svg> 
                 Luis Villar Roldán
             </div>
         </a>
     </div>
     <div>
-        <a href="https://github.com/VRLuis" target="_blank">
-            <div class="contact-target">
-                <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="40" height="40" stroke-width="2"><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path></svg>        
+        <a class="text-white" href="https://github.com/VRLuis" target="_blank">
+            <div class="contact-target w-fit h-20 ml-10 mb-5 pt-3 pb-3 pr-10 pl-10 flex justify-between items-center bg-blue-900 rounded-2xl transition-all hover:scale-110">
+                <svg class="contact-icon pr-2 pl-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="40" height="40" stroke-width="2"><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path></svg>        
                 VRLuis
             </div>
         </a>
     </div>
-    <div class="contact-target">
-        <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="40" height="40" stroke-width="2"><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"></path><path d="M3 7l9 6l9 -6"></path></svg>        
+    <div class="contact-target w-fit h-20 ml-10 mb-5 pt-3 pb-3 pr-10 pl-10 flex justify-between items-center bg-blue-900 rounded-2xl transition-all hover:scale-110 text-white">
+        <svg class="contact-icon pr-2 pl-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="40" height="40" stroke-width="2"><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"></path><path d="M3 7l9 6l9 -6"></path></svg>        
         luisvillarroldan1010@gmail.com
-        <svg id="mail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2"><path d="M7 7m0 2.667a2.667 2.667 0 0 1 2.667 -2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1 -2.667 2.667h-8.666a2.667 2.667 0 0 1 -2.667 -2.667z"></path><path d="M4.012 16.737a2.005 2.005 0 0 1 -1.012 -1.737v-10c0 -1.1 .9 -2 2 -2h10c.75 0 1.158 .385 1.5 1"></path></svg>
+        <svg class="contact-icon ml-5" id="mail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2"><path d="M7 7m0 2.667a2.667 2.667 0 0 1 2.667 -2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1 -2.667 2.667h-8.666a2.667 2.667 0 0 1 -2.667 -2.667z"></path><path d="M4.012 16.737a2.005 2.005 0 0 1 -1.012 -1.737v-10c0 -1.1 .9 -2 2 -2h10c.75 0 1.158 .385 1.5 1"></path></svg>
     </div>
+    
 </div>
 
 
@@ -83,122 +84,15 @@ import Foto from "../images/fotocurriculum.jpg";
   
 
 <style>
-    header{
-        padding: 20px 0;
-        font-size: 50px;
-        justify-content: center;
-        text-align: center;
-        a{
-            text-decoration: none;
-            button{
-                border: 1px solid whitesmoke;
-                color: whitesmoke;
-                padding: 20px 100px;
-                border-radius: 5px;
-                font-size: 40px;
-                background-color: rgb(24, 55, 159);
-                scale: 1;
-                transition: 0.5s;
-                cursor: pointer;
-                &:hover{
-                    scale: 1.2;
-                    transition: 0.5s;
-                }
-            }
-        }
-        h2{
-            font-size: 50px;
-            color: rgb(2, 166, 255);
-        }
-        p{
-            font-size: 24px;  
-            text-align: left; 
-            margin: 20px 50px; 
-        }
-    }
     .nav{
-        
         a{
-            
-            transition: 200ms;
-            min-width: 100px;
-            width: fit-content;
-            margin: 30px;
             box-shadow: 0 0 25px #162447;
-            &:hover{
-                scale: 1.2  ;
-                transition: 200ms;
-            }
         }
-    }
-
-    .contact-information{
-        padding: 80px;
-        width: 1000px;
-        margin: 50px auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    a{
-        text-decoration: none;
-        color: whitesmoke;
     }
 
     .contact-target{
-        width: fit-content;
-        margin-left: 40px;
-        margin-bottom: 20px;
-        padding: 10px 50px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        box-shadow: 0 0 10px #5eb0f740;
-        background-color: #3e6adb8f;
-        border-radius: 15px;
-        transition: 200ms;
-        height: fit-content;
-        &:hover{
-            transition: 200ms;
-            scale: 1.1;
-        }
-        svg{
-            padding: 0px 5px;
-        }
-    }
-
-    #about{
-        max-width: 920px;
-        margin: 0 auto;
-    }
-
-    .about-information{
-        width: 920px;
-        margin-top: 100px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        p{
-            width: 500px;
-            font-size: 20px;
-        }
-        #paragraph-title{
-            font-style: oblique;
-            color: rgba(245, 245, 245, 0.51);
-        }
-        h2{
-            color: goldenrod;
-            font-style: italic;
-        }
-        .highlight{
-            font-weight: bolder;
-            font-style: oblique;
-            color:burlywood;
-        }
-        .about-paragraph{
-            width: 500px;
-        }
+        box-shadow: 0 0 10px #309eff40;
+       
     }
 
     .scrolled{
@@ -215,10 +109,10 @@ import Foto from "../images/fotocurriculum.jpg";
             margin: 0;
         }
         &:hover{
+            background-color: #11113da5;
             a{
                 color: rgb(244, 255, 255);
             }
-            background-color: #11113da5;
         }
     }
 
